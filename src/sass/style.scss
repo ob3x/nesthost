@@ -315,7 +315,29 @@ a {
 			align-items: center;
 			text-align: center;
 		}
+		&__icons {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 3em;
+			&-item {
+				width: 3em;
+				height: 3em;
+				&--fb {
+					background-image: url(../../src/img/svg/facebook.svg);
+					cursor: pointer;
+				}
+				&--ig {
+					background-image: url(../../src/img/svg/instagram.svg);
+					cursor: pointer;
+				}
+				&--tt {
+					background-image: url(../../src/img/svg/tiktok.svg);
+					cursor: pointer;
+				}
+			}
+		}
 		&__list {
+			list-style-type: none;
 			&-item {
 				margin: 2em 0;
 			}
@@ -350,7 +372,7 @@ a {
 			text-align: center;
 			color: $black;
 			font-weight: bold;
-			font-size: 2rem;
+			font-size: 1.5rem;
 		}
 	}
 }
@@ -425,6 +447,9 @@ a {
 				justify-content: space-between;
 				text-align: left;
 			}
+		}
+		&-bottom__text {
+			font-size: 2rem;
 		}
 	}
 }
