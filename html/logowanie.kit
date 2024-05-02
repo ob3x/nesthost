@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NestHost.pl | Logowanie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+</head>
+
+<body>
+    <!-- @include 'nav' -->
+    <section class="login">
+        <h1 class="login-title">Zaloguj się</h1>
+        <p class="login-text">Zaloguj się żeby mieć dostęp do panelu klienta</p>
+        <div class="login-box">
+            <div class="login-line"></div>
+            <div class="login-box__item">
+                <input type="email" class="login-box__item-input" placeholder="E-mail">
+            </div>
+            <div class="login-box__item">
+                <input type="password" class="login-box__item-input" placeholder="Hasło">
+            </div>
+            <div class="login-secoundbox">
+                <div class="login-box__checkbox">
+                    <input type="checkbox" class="login-box__checkbox-input">
+                    <p class="login-box__checkbox-text">Zapamiętaj mnie</p>
+                </div>
+                <a href="zapomnialem-hasla.html" class="login-box__forget">Zapomniałeś hasła?</a>
+            </div>
+            <button class="login-box__button">Zaloguj się</button>
+            <p class="login-box__register">Nie posiadasz jeszcze konta? Kliknij <a href="rejestracja.html"
+                    class="login-box__register-link">tutaj</a> i dołącz do nas!</p>
+        </div>
+    </section>
+    <!-- @include 'footer' -->
+</body>
+
+
+</html>
