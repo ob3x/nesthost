@@ -514,6 +514,7 @@ a {
 			&-item {
 				width: 3em;
 				height: 3em;
+				transition: transform .3s;
 				&--fb {
 					background-image: url(../../src/img/svg/facebook.svg);
 					cursor: pointer;
@@ -525,6 +526,9 @@ a {
 				&--tt {
 					background-image: url(../../src/img/svg/tiktok.svg);
 					cursor: pointer;
+				}
+				&:hover {
+					transform: scale(1.1);
 				}
 			}
 		}
@@ -576,7 +580,7 @@ a {
 @media (min-width: 350px) {
 	.nav {
 		&-logo {
-			font-size: 1.3rem;
+			font-size: 1.4rem;
 		}
 		&-list__item {
 			font-size: 1.3rem;
