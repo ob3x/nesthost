@@ -330,13 +330,14 @@ a {
 	align-items: center;
 	padding: 8em 2em;
 	text-align: center;
+	background-color: $grey;
 	&-title {
 		font-size: 5rem;
 		color: $main-color;
 	}
 	&-text {
 		margin: 0.5em 0 1.5em;
-		color: $grey;
+		color: $main-color;
 		font-size: 2rem;
 		font-weight: 500;
 	}
@@ -344,7 +345,7 @@ a {
 		margin-bottom: 2em;
 		height: 0.1em;
 		width: 100%;
-		background-color: $grey;
+		background-color: $main-color;
 	}
 	&-box {
 		display: flex;
@@ -354,10 +355,16 @@ a {
 			margin: 1.5em 0;
 			&-input {
 				padding: 1.3em;
-				border: 0.1em solid $grey;
+				border: 0.1em solid $main-color;
 				border-radius: 0.5em;
+				background-color: $grey;
 				width: 100%;
-				color: $grey;
+				color: $main-color;
+				font-weight: 600;
+				&::placeholder {
+					color: $main-color;
+					font-weight: 600;
+				}
 				&--secound {
 					width: 47%;
 				}
@@ -368,6 +375,7 @@ a {
 			align-items: center;
 			align-self: flex-start;
 			font-weight: 500;
+			color: $main-color;
 			&-input {
 				appearance: none;
 				-webkit-appearance: none;
@@ -376,7 +384,7 @@ a {
 				margin-right: 0.5em;
 				width: 1.1em;
 				height: 1.1em;
-				border: 0.15em solid $grey;
+				border: 0.15em solid $main-color;
 				cursor: pointer;
 				&:checked::after {
 					position: absolute;
@@ -385,7 +393,7 @@ a {
 					transform: translate(-50%, -50%);
 					width: 80%;
 					height: 80%;
-					background-color: $black;
+					background-color: $main-color;
 					content: '';
 				}
 			}
@@ -402,7 +410,7 @@ a {
 			transition: color 0.3s, background-color 0.3s;
 			cursor: pointer;
 			&:hover {
-				background-color: $white;
+				background-color: $grey;
 				color: $main-color;
 			}
 		}
@@ -410,6 +418,8 @@ a {
 			position: relative;
 			color: $main-color;
 			font-weight: 600;
+			transition: height 0.3s;
+			z-index: 1;
 			&::after {
 				position: absolute;
 				bottom: -0.1em;
@@ -417,22 +427,24 @@ a {
 				width: 100%;
 				height: 0.15em;
 				background-color: $main-color;
-				transform: scale(0);
-				transform-origin: right;
-				transition: transform 0.3s;
+				transition: height 0.3s;
+				z-index: -1;
 				content: '';
 			}
-			&:hover::after {
-				transform: scale(1);
-				transform-origin: left;
+			&:hover {
+				color: $grey;
+				&::after {
+					height: 100%;
+				}
 			}
 		}
 		&__register {
 			font-weight: 600;
 			font-size: 1.5rem;
+			color: $main-color;
 			&-link {
 				position: relative;
-				color: $main-color;
+				color: $purewhite;
 				text-transform: uppercase;
 				&::after {
 					position: absolute;
@@ -440,7 +452,7 @@ a {
 					left: 0;
 					width: 100%;
 					height: 0.15em;
-					background-color: $main-color;
+					background-color: $purewhite;
 					transform: scale(0);
 					transform-origin: right;
 					transition: transform 0.3s;
@@ -514,7 +526,7 @@ a {
 			&-item {
 				width: 3em;
 				height: 3em;
-				transition: transform .3s;
+				transition: transform 0.3s;
 				&--fb {
 					background-image: url(../../src/img/svg/facebook.svg);
 					cursor: pointer;
