@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NestHost.pl | Panel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+</head>
+
+<body>
+    <!-- @include 'nav' -->
+    <section class="panel">
+        <div class="panel-menu">
+            <h3 class="panel-menu__title">Ogólne</h3>
+            <div class="panel-menu__item panel-menu__item-active">
+                <div class="panel-menu__item-status"></div>
+                <div class="panel-menu__item-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layout-dashboard"
+                        width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f8842c" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 4h6v8h-6z" />
+                        <path d="M4 16h6v4h-6z" />
+                        <path d="M14 12h6v8h-6z" />
+                        <path d="M14 4h6v4h-6z" />
+                    </svg>
+                    <span class="panel-menu__item-box--text">Panel</span>
+                </div>
+            </div>
+            <div class="panel-menu__item">
+                <div class="panel-menu__item-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="44"
+                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f8842c" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
+                        <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    </svg>
+                    <span class="panel-menu__item-box--text">Zmień dane</span>
+                </div>
+            </div>
+            <div class="panel-menu__item">
+                <div class="panel-menu__item-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-wallet" width="44"
+                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f8842c" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12" />
+                            <path d="M20 12v4h-4a2 2 0 0 1 0 -4h4" />
+                        </svg>
+                    <span class="panel-menu__item-box--text">Doładuj konto</span>
+                </div>
+            </div>
+            <div class="panel-menu__item">
+                <div class="panel-menu__item-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-bag" width="44"
+                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f8842c" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" />
+                        <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+                    </svg>
+                    <span class="panel-menu__item-box--text">Zamów serwer</span>
+                </div>
+            </div>
+            <h3 class="panel-menu__title">Linki</h3>
+            <a class="panel-menu__item panel-menu__item-link" href="#">
+                <div class="panel-menu__item-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dashboard" width="44"
+                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f8842c" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M12 13m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M13.45 11.55l2.05 -2.05" />
+                        <path d="M6.4 20a9 9 0 1 1 11.2 0z" />
+                    </svg>
+                    <span class="panel-menu__item-box--text">Panel serwera</span>
+                </div>
+            </a>
+            <a class="panel-menu__item panel-menu__item-link" href="#">
+                <div class="panel-menu__item-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="44"
+                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f8842c" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
+                        <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    </svg>
+                    <span class="panel-menu__item-box--text">PhpMyAdmin</span>
+                </div>
+            </a>
+            <a class="panel-menu__item panel-menu__item-link" href="#">
+                <div class="panel-menu__item-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-discord"
+                        width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f8842c" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                        <path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                        <path
+                            d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-.972 1.923a11.913 11.913 0 0 0 -4.053 0l-.975 -1.923c-1.5 .16 -3.043 .485 -4.5 1.5c-2 5.667 -2.167 9.833 -1.5 11.5c.667 1.333 2 3 3.5 3c.5 0 2 -2 2 -3" />
+                        <path d="M7 16.5c3.5 1 6.5 1 10 0" />
+                    </svg>
+                    <span class="panel-menu__item-box--text">Discord</span>
+                </div>
+            </a>
+        </div>
+        <div class="panel-box">
+            <div class="panel-box__menu">
+                <h2 class="panel-box__title">Twoje Serwery</h2>
+                <div class="panel-box__profilebox">
+                    <div class="panel-box__menu-wallet">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-wallet" width="30"
+                            height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f8842c" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12" />
+                            <path d="M20 12v4h-4a2 2 0 0 1 0 -4h4" />
+                        </svg>
+                        <p class="panel-box__menu-wallet--p"><span
+                                class="panel-box__menu-wallet--count">159.99</span>PLN</p>
+                    </div>
+                    <div class="panel-box__profilebox-item">
+                        <p class="panel-box__profilebox-item--name">Nikodem Król</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="dist/js/panel.min.js"></script>
+    <!-- @include 'footer' -->
+</body>
+
+
+</html>
