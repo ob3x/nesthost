@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NestHost.pl | Panel</title>
+    <title>NestHost.pl | Zmień dane</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,15 +14,29 @@
 </head>
 
 <body>
-    <!-- @include 'nav' -->
+    <nav class="nav">
+    <div class="wrapper nav-box">
+        <a href="index.html" class="nav-logo">
+            <div class="nav-logo__icon"></div>
+            <p class="nav-logo__text"><span class="nav-logo__text-color">Nest</span><span
+                    class="nav-logo__text-color">Host</span></p>
+        </a>
+        <ul class="nav-list">
+            <li class="nav-list__item"><a href="oferta.html" class="nav-list__item-link">Oferta</a></li>
+            <li class="nav-list__item"><a href="https://discord.com/invite/cSBMjFjZGn" target="_blank" rel="noopener"
+                    class="nav-list__item-link">Discord</a></li>
+            <li class="nav-list__item"><a href="logowanie.html" class="nav-list__button">Zaloguj się<div
+                        class="nav-list__button-img"></div></a></li>
+        </ul>
+    </div>
+</nav>
     <section class="panel">
         <div class="panel-burger">
             <div class="panel-burger__bars"></div>
         </div>
         <div class="panel-menu">
             <h3 class="panel-menu__title">Ogólne</h3>
-            <a class="panel-menu__item  panel-menu__item-link panel-menu__item-active" href="panel.html">
-                <div class="panel-menu__item-status"></div>
+            <a class="panel-menu__item  panel-menu__item-link" href="panel.html">
                 <div class="panel-menu__item-box">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layout-dashboard"
                         width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f8842c" fill="none"
@@ -50,7 +64,8 @@
                     <span class="panel-menu__item-box--text">ItemShop</span>
                 </div>
             </a>
-            <a class="panel-menu__item panel-menu__item-link" href="zmien-dane.html">
+            <a class="panel-menu__item panel-menu__item-link panel-menu__item-active" href="zmien-dane.html">
+                <div class="panel-menu__item-status"></div>
                 <div class="panel-menu__item-box">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="44"
                         height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f8842c" fill="none"
@@ -134,11 +149,10 @@
         </div>
         <div class="panel-box">
             <div class="panel-box__menu">
-                <h2 class="panel-box__title">Twoje Serwery</h2>
+                <h2 class="panel-box__title">Zmień dane</h2>
                 <div class="panel-box__profilebox">
                     <div class="panel-box__menu-wallet">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="icon icon-tabler icon-tabler-wallet panel-box__menu-wallet--img" width="30"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-wallet" width="30"
                             height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f8842c" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -154,59 +168,84 @@
                     </div>
                 </div>
             </div>
-            <div class="panel-box__bottom">
-                <a class="panel-box__item panel-box__item-anim" href="serwer-info.html">
-                    <img src="dist/img/server-logo.webp" alt="logo" class="panel-box__item-img">
-                    <div class="panel-box__item-box panel-box__item-box--active">
-                        <h3 class="panel-box__item-box--title">Testowy</h3>
-                        <span class="panel-box__item-box--text">Nazwa</span>
+            <div class="panel-box__bottom panel-box__bottom-change">
+                <form class="panel-change__box panel-change">
+                    <h3 class="panel-box__bottom-title">Ogólne</h3>
+                    <div class="login-line panel-change__box-white"></div>
+                    <div class="login-registerbox__item">
+                        <div class="login-box__item login-box__item-input--secound">
+                            <input type="text" class="login-box__item-input panel-change__box-inputwhite"
+                                placeholder="Imię">
+                        </div>
+                        <div class="login-box__item login-box__item-input--secound">
+                            <input type="text" class="login-box__item-input panel-change__box-inputwhite"
+                                placeholder="Nazwisko">
+                        </div>
                     </div>
-                    <div class="panel-box__item-box">
-                        <h3 class="panel-box__item-box--title">Discord 2GB</h3>
-                        <span class="panel-box__item-box--text">Oferta</span>
+                    <div class="login-box__item">
+                        <input type="text" class="login-box__item-input panel-change__box-inputwhite"
+                            placeholder="Nick">
                     </div>
-                    <div class="panel-box__item-box">
-                        <h3 class="panel-box__item-box--title">16.99 PLN</h3>
-                        <span class="panel-box__item-box--text">Cena</span>
+                    <div class="login-box__item">
+                        <input type="email" class="login-box__item-input panel-change__box-inputwhite"
+                            placeholder="E-mail">
                     </div>
-                    <div class="panel-box__item-box">
-                        <h3 class="panel-box__item-box--title">Zawieszony</h3>
-                        <span class="panel-box__item-box--text">Status</span>
+                    <button class="login-box__button panel-change__box-buttonwhite">Zmień dane</button>
+                </form>
+                <form class="panel-change__box panel-change">
+                    <h3 class="panel-box__bottom-title">Hasło</h3>
+                    <div class="login-line panel-change__box-white"></div>
+                    <div class="login-box__item">
+                        <input type="text" class="login-box__item-input panel-change__box-inputwhite"
+                            placeholder="Stare hasło">
                     </div>
-                    <div class="panel-box__item-box">
-                        <h3 class="panel-box__item-box--title">2024-07-05</h3>
-                        <span class="panel-box__item-box--text">Wygasł</span>
+                    <div class="login-box__item">
+                        <input type="text" class="login-box__item-input panel-change__box-inputwhite"
+                            placeholder="Nowe hasło">
                     </div>
-                </a>
-                <a class="panel-box__item panel-box__item-anim" href="serwer-info.html">
-                    <img src="dist/img/server-logo.webp" alt="logo" class="panel-box__item-img">
-                    <div class="panel-box__item-box panel-box__item-box--active">
-                        <h3 class="panel-box__item-box--title">Testowy</h3>
-                        <span class="panel-box__item-box--text">Nazwa</span>
+                    <div class="login-box__item">
+                        <input type="email" class="login-box__item-input panel-change__box-inputwhite"
+                            placeholder="Powtórz nowe hasło">
                     </div>
-                    <div class="panel-box__item-box">
-                        <h3 class="panel-box__item-box--title">Discord 2GB</h3>
-                        <span class="panel-box__item-box--text">Oferta</span>
-                    </div>
-                    <div class="panel-box__item-box">
-                        <h3 class="panel-box__item-box--title">16.99 PLN</h3>
-                        <span class="panel-box__item-box--text">Cena</span>
-                    </div>
-                    <div class="panel-box__item-box">
-                        <h3 class="panel-box__item-box--title">Zawieszony</h3>
-                        <span class="panel-box__item-box--text">Status</span>
-                    </div>
-                    <div class="panel-box__item-box">
-                        <h3 class="panel-box__item-box--title">2024-07-05</h3>
-                        <span class="panel-box__item-box--text">Wygasł</span>
-                    </div>
-                </a>
-                <a class="balance-container__button balance-container__button-secound" href="oferta.html">Zamów
-                    serwer</a>
+                    <button class="login-box__button panel-change__box-buttonwhite">Zmień hasło</button>
+                </form>
             </div>
         </div>
     </section>
-    <!-- @include 'footer' -->
+    <footer class="footer">
+    <div class="footer-top">
+        <div class="wrapper footer-top__wrapper">
+            <div href="index.html" class="footer-logo">
+                <div class="nav-logo__icon"></div>
+                <p class="nav-logo__text"><span class="nav-logo__text-color">Nest</span><span
+                        class="nav-logo__text-color">Host</span></p>
+            </div>
+            <div class="footer-top__box">
+                <ul class="footer-top__list">
+                    <li class="footer-top__list-item"><a href="https://nesthost.pl/REGULAMIN_NESTHOST.pdf" target="_blank" rel="noopener" class="footer-top__list-link">Regulamin</a></li>
+                    <li class="footer-top__list-item"><a href="https://nesthost.pl/POLITYKA_PRYWATNOSCI_NESTHOST.pdf" target="_blank" rel="noopener" class="footer-top__list-link">Polityka prywatności</a>
+                    </li>
+                    <li class="footer-top__list-item"><a href="https://discord.com/invite/cSBMjFjZGn" target="_blank"
+                            rel="noopener" class="footer-top__list-link">Discord</a></li>
+                </ul>
+                <div class="footer-top__icons">
+                    <a href="https://www.facebook.com/profile.php?id=61555789384947&locale=pl_PL" target="_blank" rel="noopener" class="footer-top__icons-item__link">
+                        <div class="footer-top__icons-item footer-top__icons-item--fb"></div>
+                    </a>
+                    <a href="https://www.instagram.com/nesthost_pl/" target="_blank" rel="noopener" class="footer-top__icons-item__link">
+                        <div class="footer-top__icons-item footer-top__icons-item--ig"></div>
+                    </a>
+                    <a href="https://www.tiktok.com/@nesthost.pl" target="_blank" rel="noopener" class="footer-top__icons-item__link">
+                        <div class="footer-top__icons-item footer-top__icons-item--tt"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p class="footer-bottom__text">© 2024 | NestHost.pl</p>
+    </div>
+</footer>
     <script src="dist/js/panel.min.js"></script>
 </body>
 

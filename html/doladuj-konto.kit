@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NestHost.pl | Panel</title>
+    <title>NestHost.pl | Doładuj konto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,8 +21,7 @@
         </div>
         <div class="panel-menu">
             <h3 class="panel-menu__title">Ogólne</h3>
-            <a class="panel-menu__item  panel-menu__item-link panel-menu__item-active" href="panel.html">
-                <div class="panel-menu__item-status"></div>
+            <a class="panel-menu__item  panel-menu__item-link" href="panel.html">
                 <div class="panel-menu__item-box">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layout-dashboard"
                         width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f8842c" fill="none"
@@ -63,7 +62,8 @@
                     <span class="panel-menu__item-box--text">Zmień dane</span>
                 </div>
             </a>
-            <a class="panel-menu__item panel-menu__item-link" href="doladuj-konto.html">
+            <a class="panel-menu__item panel-menu__item-link panel-menu__item-active" href="doladuj-konto.html">
+                <div class="panel-menu__item-status"></div>
                 <div class="panel-menu__item-box">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-wallet" width="44"
                         height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f8842c" fill="none"
@@ -134,11 +134,10 @@
         </div>
         <div class="panel-box">
             <div class="panel-box__menu">
-                <h2 class="panel-box__title">Twoje Serwery</h2>
+                <h2 class="panel-box__title">Doładuj konto</h2>
                 <div class="panel-box__profilebox">
                     <div class="panel-box__menu-wallet">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="icon icon-tabler icon-tabler-wallet panel-box__menu-wallet--img" width="30"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-wallet" width="30"
                             height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f8842c" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -155,54 +154,67 @@
                 </div>
             </div>
             <div class="panel-box__bottom">
-                <a class="panel-box__item panel-box__item-anim" href="serwer-info.html">
-                    <img src="dist/img/server-logo.webp" alt="logo" class="panel-box__item-img">
-                    <div class="panel-box__item-box panel-box__item-box--active">
-                        <h3 class="panel-box__item-box--title">Testowy</h3>
-                        <span class="panel-box__item-box--text">Nazwa</span>
+                <div class="balance">
+                    <div class="balance-container">
+                        <div class="balance-container-box">
+                            <div class="balance-container__item">
+                                <p class="balance-container__item-text">5zł</p>
+                            </div>
+                            <div class="balance-container__item">
+                                <p class="balance-container__item-text">10zł</p>
+                            </div>
+                            <div class="balance-container__item">
+                                <p class="balance-container__item-text">15zł</p>
+                            </div>
+                            <div class="balance-container__item">
+                                <p class="balance-container__item-text">20zł</p>
+                            </div>
+                            <div class="balance-container__item">
+                                <p class="balance-container__item-text">25zł</p>
+                            </div>
+                            <div class="balance-container__item">
+                                <p class="balance-container__item-text">30zł</p>
+                            </div>
+                            <div class="balance-container__item">
+                                <p class="balance-container__item-text">35zł</p>
+                            </div>
+                            <div class="balance-container__item">
+                                <p class="balance-container__item-text">40zł</p>
+                            </div>
+                            <div class="balance-container__item">
+                                <p class="balance-container__item-text">45zł</p>
+                            </div>
+                            <div class="balance-container__item">
+                                <p class="balance-container__item-text">50zł</p>
+                            </div>
+                            <div class="balance-container__item">
+                                <p class="balance-container__item-text">60zł</p>
+                            </div>
+                            <div class="balance-container__item">
+                                <p class="balance-container__item-text">70zł</p>
+                            </div>
+                            <div class="balance-container__item">
+                                <p class="balance-container__item-text">80zł</p>
+                            </div>
+                            <div class="balance-container__item">
+                                <p class="balance-container__item-text">90zł</p>
+                            </div>
+                            <div class="balance-container__item">
+                                <p class="balance-container__item-text">100zł</p>
+                            </div>
+                            <div class="balance-container__item">
+                                <p class="balance-container__item-text">150zł</p>
+                            </div>
+                            <div class="balance-container__item">
+                                <p class="balance-container__item-text">200zł</p>
+                            </div>
+                        </div>
+                        <p class="balance-text">Możliwość płatności paysafecard tylko poprzez <a
+                                href="https://discord.com/invite/cSBMjFjZGn" target="_blank" rel="noopener"
+                                class="balance-text__link">Discord</a></p>
+                        <button class="balance-container__button">Doładuj</button>
                     </div>
-                    <div class="panel-box__item-box">
-                        <h3 class="panel-box__item-box--title">Discord 2GB</h3>
-                        <span class="panel-box__item-box--text">Oferta</span>
-                    </div>
-                    <div class="panel-box__item-box">
-                        <h3 class="panel-box__item-box--title">16.99 PLN</h3>
-                        <span class="panel-box__item-box--text">Cena</span>
-                    </div>
-                    <div class="panel-box__item-box">
-                        <h3 class="panel-box__item-box--title">Zawieszony</h3>
-                        <span class="panel-box__item-box--text">Status</span>
-                    </div>
-                    <div class="panel-box__item-box">
-                        <h3 class="panel-box__item-box--title">2024-07-05</h3>
-                        <span class="panel-box__item-box--text">Wygasł</span>
-                    </div>
-                </a>
-                <a class="panel-box__item panel-box__item-anim" href="serwer-info.html">
-                    <img src="dist/img/server-logo.webp" alt="logo" class="panel-box__item-img">
-                    <div class="panel-box__item-box panel-box__item-box--active">
-                        <h3 class="panel-box__item-box--title">Testowy</h3>
-                        <span class="panel-box__item-box--text">Nazwa</span>
-                    </div>
-                    <div class="panel-box__item-box">
-                        <h3 class="panel-box__item-box--title">Discord 2GB</h3>
-                        <span class="panel-box__item-box--text">Oferta</span>
-                    </div>
-                    <div class="panel-box__item-box">
-                        <h3 class="panel-box__item-box--title">16.99 PLN</h3>
-                        <span class="panel-box__item-box--text">Cena</span>
-                    </div>
-                    <div class="panel-box__item-box">
-                        <h3 class="panel-box__item-box--title">Zawieszony</h3>
-                        <span class="panel-box__item-box--text">Status</span>
-                    </div>
-                    <div class="panel-box__item-box">
-                        <h3 class="panel-box__item-box--title">2024-07-05</h3>
-                        <span class="panel-box__item-box--text">Wygasł</span>
-                    </div>
-                </a>
-                <a class="balance-container__button balance-container__button-secound" href="oferta.html">Zamów
-                    serwer</a>
+                </div>
             </div>
         </div>
     </section>
