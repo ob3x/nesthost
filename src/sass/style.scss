@@ -519,7 +519,7 @@ a {
 .panel {
 	position: relative;
 	display: flex;
-	padding: 4em;
+	padding: 4em 1em;
 	background-color: $grey;
 	&-menu {
 		position: fixed;
@@ -628,7 +628,7 @@ a {
 			text-transform: uppercase;
 		}
 		&__bottom {
-			margin: 5em 3em;
+			margin: 5em 1em;
 			&-title {
 				margin-bottom: 1em;
 				color: $main-color;
@@ -683,7 +683,7 @@ a {
 		&__box {
 			display: flex;
 			flex-direction: column;
-			width: auto;
+			width: 100%;
 			margin: 0 1em;
 			&-inputwhite {
 				border: 0.2em solid rgb(134, 134, 134);
@@ -1082,9 +1082,6 @@ a {
 				}
 			}
 		}
-		&-change__box {
-			width: 30em;
-		}
 	}
 }
 
@@ -1167,7 +1164,11 @@ a {
 		}
 	}
 	.panel {
+		padding: 4em;
 		&-box {
+			&__bottom {
+				margin: 5em 3em;
+			}
 			&__item {
 				margin-bottom: 5em;
 				&-box {
@@ -1193,7 +1194,7 @@ a {
 			}
 		}
 		&-change__box {
-			width: 40em;
+			width: 45em;
 		}
 	}
 	.banalce-container__item {
