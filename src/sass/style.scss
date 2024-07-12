@@ -677,6 +677,29 @@ a {
 					font-weight: 500;
 				}
 			}
+			&-button {
+				padding: .7em 2.3em;
+				margin: 0 1em;
+				font-weight: bold;
+				font-size: 1.7rem;
+				background-color: $main-color;
+				color: $black;
+				border: .2em solid $main-color;
+				border-radius: .5em;
+				transition: .3s;
+				cursor: pointer;
+				&:hover {
+					background-color: $black;
+					color: $main-color;
+				}
+			}
+			&-fourbox {
+				display: flex;
+				align-items: center;
+				&--img {
+					margin-right: 5em;
+				}
+			}
 		}
 	}
 	&-change {
@@ -943,6 +966,7 @@ a {
 			border-radius: 0.5em;
 			background-color: $main-color;
 			color: $grey;
+			text-align: center;
 			font-weight: bold;
 			font-size: 1.8rem;
 			transition: 0.3s;
